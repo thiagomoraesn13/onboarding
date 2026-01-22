@@ -14,7 +14,7 @@ export function Page2() {
           variant="secondary"
           width="full"
           type="button"
-          onClick={() => navigate("/onboarding/page1")}
+          onClick={() => navigate("../page1")}
         >
           Voltar
         </GenericButton>

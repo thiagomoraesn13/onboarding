@@ -13,7 +13,7 @@ export function Page1() {
         variant="primary"
         width="full"
         type="button"
-        onClick={() => navigate("/onboarding/page2")}
+        onClick={() => navigate("../page2")}
       >
         Ir para próxima página
       </GenericButton>
