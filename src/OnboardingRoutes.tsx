@@ -5,7 +5,7 @@ import { Page2 } from "./pages/Page2";
 export function OnboardingRoutes() {
   return (
     <Routes>
-      <Route index element={<Navigate to="step-1" replace />} />
+      <Route index element={<Navigate to="page1" replace />} />
       <Route path="page1" element={<Page1 />} />
       <Route path="page2" element={<Page2 />} />
       <Route path="*" element={<Navigate to="page1" replace />} />
