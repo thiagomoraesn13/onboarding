@@ -1,4 +1,4 @@
-import { Button } from "@thiagomoraesn13/ui";
+import { GenericButton } from "@thiagomoraesn13/ui";
 import { useNavigate } from "react-router-dom";
 
 export function Step2() {
@@ -10,16 +10,23 @@ export function Step2() {
       <p className="text-neutral-dk-2">Segunda tela do onboarding.</p>
 
       <div className="flex gap-3">
-        <Button
-          className="w-full bg-base-lt text-brand border-2"
+        <GenericButton
+          variant="secondary"
+          width="full"
+          type="button"
           onClick={() => navigate("../step-1")}
         >
           Voltar
-        </Button>
+        </GenericButton>
 
-        <Button className="w-full" onClick={() => alert("Finalizou!")}>
+        <GenericButton
+          variant="primary"
+          width="full"
+          type="button"
+          onClick={() => alert("Finalizou!")}
+        >
           Finalizar
-        </Button>
+        </GenericButton>
       </div>
     </div>
   );

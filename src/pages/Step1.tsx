@@ -1,4 +1,4 @@
-import { Button } from "@thiagomoraesn13/ui";
+import { GenericButton } from "@thiagomoraesn13/ui";
 import { useNavigate } from "react-router-dom";
 
 export function Step1() {
@@ -9,9 +9,14 @@ export function Step1() {
       <h2 className="text-xl font-bold">Onboarding • Step 1</h2>
       <p className="text-neutral-dk-2">Primeira tela do onboarding.</p>
 
-      <Button className="w-full" onClick={() => navigate("../step-2")}>
-        Continuar
-      </Button>
+      <GenericButton
+        variant="secondary"
+        width="full"
+        type="button"
+        onClick={() => navigate("../step-2")}
+      >
+        continuar
+      </GenericButton>
     </div>
   );
 }
