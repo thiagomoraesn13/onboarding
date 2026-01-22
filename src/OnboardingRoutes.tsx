@@ -1,14 +1,14 @@
 import { Navigate, Route, Routes } from "react-router-dom";
-import { Step1 } from "./pages/Step1";
-import { Step2 } from "./pages/Step2";
+import { Page1 } from "./pages/Page1";
+import { Page2 } from "./pages/Page2";
 
 export function OnboardingRoutes() {
   return (
     <Routes>
       <Route index element={<Navigate to="step-1" replace />} />
-      <Route path="step-1" element={<Step1 />} />
-      <Route path="step-2" element={<Step2 />} />
-      <Route path="*" element={<Navigate to="step-1" replace />} />
+      <Route path="page1" element={<Page1 />} />
+      <Route path="page2" element={<Page2 />} />
+      <Route path="*" element={<Navigate to="page1" replace />} />
     </Routes>
   );
 }
