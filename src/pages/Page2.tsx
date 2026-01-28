@@ -1,8 +1,8 @@
 import { GenericButton } from "@thiagomoraesn13/ui";
-import { useNavigate } from "react-router-dom";
+import { useOnboarding } from "../onboarding-context";
 
 export function Page2() {
-  const navigate = useNavigate();
+  const { goToHome } = useOnboarding();
 
   return (
     <div className="p-6 space-y-4">
@@ -14,9 +14,9 @@ export function Page2() {
           variant="secondary"
           width="full"
           type="button"
-          onClick={() => navigate("../page1")}
+          onClick={() => goToHome()}
         >
-          Voltar
+          voltar para home
         </GenericButton>
 
         <GenericButton

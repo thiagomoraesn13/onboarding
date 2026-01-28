@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    /* Base */
+    "target": "ES2020",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+
+    /* Vite */
+    "types": ["vite/client"],
+
+    /* Paths (alias para o onboarding local) */
+    "baseUrl": ".",
+    "paths": {
+      "@thiagomoraesn13/onboarding": ["../src/index.ts"],
+      "@thiagomoraesn13/onboarding/*": ["../src/*"]
+    },
+
+    /* Qualidade */
+    "strict": true,
+    "skipLibCheck": true,
+    "noEmit": true
+  },
+  "include": ["src"]
+}
